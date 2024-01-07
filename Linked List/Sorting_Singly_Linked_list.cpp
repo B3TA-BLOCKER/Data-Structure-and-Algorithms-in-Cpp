@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 class node
 {
 public:
@@ -39,26 +40,22 @@ void Sorting(node *&head)
     int temp;
     int count = 0;
     node *temp_head = head;
+    node *temp_ = head;
+
     while (temp_head->next != NULL)
     {
-        ++count;
-        temp_head = temp_head->next;
-    }
-
-    temp_head = head;
-    for (int i = 0; i < count; i++)
-    {
-        temp_head = head;
-        for (int j = 0; j < count - 1; j++)
+        temp_ = head;
+        while (temp_->next != NULL)
         {
-            if (temp_head->data > temp_head->next->data)
+            if (temp_->data > temp_->next->data)
             {
-                temp = temp_head->data;
-                temp_head->data = temp_head->next->data;
-                temp_head->next->data = temp;
+                temp = temp_->data;
+                temp_->data = temp_->next->data;
+                temp_->next->data = temp;
             }
-            temp_head = temp_head->next;
+            temp_ = temp_->next;
         }
+        temp_head = temp_head->next;
     }
 }
 
