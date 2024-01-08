@@ -19,7 +19,7 @@ Explore the organized folders to find implementations for different data structu
 
 ## Getting Started 🏁
 
-1. Clone the repository: `git clone https://github.com/your-username/dsa-implementations.git`
+1. Clone the repository: `git clone https://github.com/B3TA-BLOCKER/Data-Structure-and-Algorithms-in-Cpp.git`
 2. Navigate to a specific folder of interest.
 3. Review the code and explore the accompanying explanations.
 
